@@ -6,10 +6,10 @@ function getEle(id){
 
 
 var layDanhSachSP = function(){
-    sanPhamService.layDSSP().then(function(result){
+    sanPhamService.layDSSP().then(function(result){// result là mảng lấy từ promise trả về
         // console.log(result.data);
         //render Table
-        renderTable(result.data);
+        renderTable(result.data);// result.data là 1 cái mảng
 
     }).catch(function(error){
         console.log(error);// something was wrong
